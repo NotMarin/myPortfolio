@@ -72,6 +72,7 @@ nav{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn:hover{
@@ -176,7 +177,7 @@ section .header{
 .about{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -227,6 +228,61 @@ section .header{
 
 .about .card a:hover, .project .card a:hover{
     color: #0012BE;
+}
+
+.tech-stack{
+    margin-top: 2rem;
+    background-color: #27272a;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.tech-stack:hover{
+    background-color: #323232;
+    border: 2px solid #fff;
+}
+
+.tech-stack span{
+    display: inline-block;
+    background-color: #0012BE;
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.tech-stack h4{
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.tech-stack p{
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.tech-stack a, .project .card a{
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.tech-stack a i, .project .card a i{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.tech-stack a:hover, .project .card a:hover{
+    color: #0012BE;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sub-header{
@@ -290,19 +346,18 @@ section .header{
 
 footer{
     position: relative;
-    display: grid;
-    grid-template-columns: 400px repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    
+    gap: 10rem;
 }
 
 footer .column .logo{
     max-width: 100px;
-    margin-bottom: 2rem;
 }
 
 footer .column p{
     color: #ccc;
-    margin-bottom: 2rem;
 }
 
 footer .column .socials{
@@ -328,7 +383,7 @@ footer .column .socials a:hover{
 
 footer .column h4{
     color: #fff;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -378,6 +433,15 @@ footer .column > a:hover{
     footer{
         grid-template-columns: 1fr 200px;
     }
+
+    .flex-container {
+        display: block;
+    }
+
+    .icons-container{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
 
 @media (width < 600px){
@@ -396,5 +460,10 @@ footer .column > a:hover{
 
     footer{
         grid-template-columns: 1fr 150px;
+    }
+
+    .icons-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
