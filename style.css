@@ -348,7 +348,6 @@ footer{
     position: relative;
     display: flex;
     justify-content: center;
-    
     gap: 10rem;
 }
 
@@ -430,9 +429,6 @@ footer .column > a:hover{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    footer{
-        grid-template-columns: 1fr 200px;
-    }
 
     .flex-container {
         display: block;
@@ -459,7 +455,14 @@ footer .column > a:hover{
     }
 
     footer{
-        grid-template-columns: 1fr 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    footer .column h4{
+        text-align: center;
     }
 
     .icons-container{
