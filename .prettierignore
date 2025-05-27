@@ -1,0 +1,14 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore lock files (handled by the package manager)
+bun.lock
+
+# Ignore generated or temporary files if you add folders like 'dist' or 'build' in the future
+dist/
+build/
+
+# Ignore minified files (if you have them)
+*.min.js
+*.min.css
+

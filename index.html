@@ -1,147 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>MarinDev Portfolio</title>
-</head>
-<body>
-    
-
-
+  </head>
+  <body>
     <nav>
-        <div class="nav-logo">
-            <a href="#">
-                <img src="images/logo.png">
-            </a>
-        </div>
+      <div class="nav-logo">
+        <a href="#">
+          <img src="public/images/logo.png" />
+        </a>
+      </div>
 
-        <ul class="nav-links">
-            <li class="link"><a href="#home">Home</a></li>
-            <li class="link"><a href="#about">About</a></li>
-            <li class="link"><a href="#projects">Projects</a></li>
-            <li class="link"><a href="#contact">Contact</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#about">About</a></li>
+        <li class="link"><a href="#projects">Projects</a></li>
+        <li class="link"><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact">
         <button class="btn">Hire Me</button>
+      </a>
     </nav>
 
     <header id="home" class="container">
-        <div class="content">
-            <span class="blur"></span>
-            <span class="blur"></span>
-            <h4>CREATE YOUR SITE</h4>
-            <h1>Hi, I'm <span>Marin</span><br>Front-end Developer</h1>
-            <p>I'm a passionate learner,<br>excited to translate your ideas into code.</p>
-            <button class="btn">Get Started</button>
-        </div>
-        <div class="image">
-            <img src="images/header.png">
-        </div>
+      <div class="content">
+        <span class="blur"></span>
+        <span class="blur"></span>
+        <h4>CREATE YOUR SITE</h4>
+        <h1>
+          Hi, I'm
+          <span>Marin</span>
+          <br />
+          Front-end Developer
+        </h1>
+        <p>
+          I'm a creative problem-solver,
+          <br />
+          excited to translate your ideas into code.
+        </p>
+        <a href="#about">
+          <button class="btn">Get Started</button>
+        </a>
+      </div>
+      <div class="image">
+        <img src="public/images/header.png" />
+      </div>
     </header>
 
-    <section id="about" class="container">
-        <h2 class="header">ABOUT</h2>
-        <div class="about">
-            <div class="card">
-                <span><i class="ri-book-open-line"></i></span>
-                <h4>Study</h4>
-                <div class="flex-container">
-                    <div>
-                        <p><b>Technological Institute of Santa Rosa de Cabal</b><br>Technical bachelor <br> 2016-2021</p>
-                        </p>
-                        <a href="https://itesarc.edu.co/" target="_blank"><i class="ri-school-line"></i> Go To Main Gateway</a>
-                    </div>
-                    <div>
-                        <p><b>Technological University of Pereira</b><br> Systems Engineering <br> 2022-Actuality</p>
-                        </p>
-                        <a href="https://www.utp.edu.co/" target="_blank"><i class="ri-school-line"></i> Go To Main Gateway</a>
-                    </div>
-                </div>
+    <section id="about" class="container2">
+      <h2 class="header">ABOUT</h2>
+      <div class="about">
+        <div class="card">
+          <div class="card-header">
+            <span><i class="ri-book-open-line"></i></span>
+            <h4>Study</h4>
+          </div>
+          <div class="flex-container">
+            <div>
+              <p>
+                <b>Technological Institute of Santa Rosa de Cabal</b>
+                <br />
+                Technical Bachelor
+                <br />
+                2016-2021
+              </p>
+              <a href="https://itesarc.edu.co/" target="_blank">
+                <i class="ri-link"></i>
+              </a>
             </div>
-            <div class="card">
-                <span><i class="ri-team-line"></i></span>
-                <h4>Teams</h4>
-                <div class="flex-container">
-                    <div>
-                        <p><b>BackBone</b><br> Research Seedbed <br> June/2023-June/2024</p>
-                        </p>
-                        <a href="https://github.com/Backbone-UTP" target="_blank"><i class="ri-github-fill"></i></a>
-                        <a href="https://instagram.com/backboneutp?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="ri-instagram-line"></i></a>
-                    </div>
-                    <div>
-                        <p><b>Amatista</b><br>Software Development<br> July/2024-Actuality</p>
-                        </p>
-                        <a href="https://amatistatechnology.com/" target="_blank"><i class="ri-link"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="tech-stack">
-            <span><i class="ri-code-s-slash-line"></i></span>
-            <h4>Tech Stack</h4>
-            <div class="icons-container">
-                <img class="icon" src="https://skillicons.dev/icons?i=html" />
-                <img class="icon" src="https://skillicons.dev/icons?i=css" />
-                <img class="icon" src="https://skillicons.dev/icons?i=js" />
-                <img class="icon" src="https://skillicons.dev/icons?i=ts" />
-                <img class="icon" src="https://skillicons.dev/icons?i=nextjs" />
-                <img class="icon" src="https://skillicons.dev/icons?i=react" />
-                <img class="icon" src="https://skillicons.dev/icons?i=nodejs" />
-                <img class="icon" src="https://skillicons.dev/icons?i=py" />
-                <img class="icon" src="https://skillicons.dev/icons?i=tailwind" />
-                <img class="icon" src="https://skillicons.dev/icons?i=postman" />
-                <img class="icon" src="https://skillicons.dev/icons?i=cpp" />
-                <img class="icon" src="https://skillicons.dev/icons?i=latex" />
 
+            <div>
+              <p>
+                <b>Technological University of Pereira</b>
+                <br />
+                Software Engineering
+                <br />
+                2022-Actuality
+              </p>
+              <a href="https://www.utp.edu.co/" target="_blank">
+                <i class="ri-link"></i>
+              </a>
             </div>
+          </div>
         </div>
+        <div class="card">
+          <div class="card-header">
+            <span><i class="ri-team-line"></i></span>
+            <h4>Teams</h4>
+          </div>
+          <div class="flex-container">
+            <div>
+              <p>
+                <b>BackBone</b>
+                <br />
+                Research Seedbed
+                <br />
+                June/2023-June/2024
+              </p>
+              <a href="https://github.com/Backbone-UTP" target="_blank">
+                <i class="ri-github-fill"></i>
+              </a>
+              <a
+                href="https://instagram.com/backboneutp?igshid=MzRlODBiNWFlZA=="
+                target="_blank"
+              >
+                <i class="ri-instagram-line"></i>
+              </a>
+            </div>
+            <div>
+              <p>
+                <b>Amatista</b>
+                <br />
+                Software Development
+                <br />
+                July/2024-Actuality
+              </p>
+              <a href="https://amatistatechnology.com/" target="_blank">
+                <i class="ri-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tech-stack">
+        <div class="card-header">
+          <span><i class="ri-code-s-slash-line"></i></span>
+          <h4>Tech Stack</h4>
+        </div>
+        <div class="icons-container">
+          <img class="icon" src="https://skillicons.dev/icons?i=html" />
+          <img class="icon" src="https://skillicons.dev/icons?i=css" />
+          <img class="icon" src="https://skillicons.dev/icons?i=js" />
+          <img class="icon" src="https://skillicons.dev/icons?i=ts" />
+          <img class="icon" src="https://skillicons.dev/icons?i=nextjs" />
+          <img class="icon" src="https://skillicons.dev/icons?i=react" />
+          <img class="icon" src="https://skillicons.dev/icons?i=nodejs" />
+          <img class="icon" src="https://skillicons.dev/icons?i=py" />
+          <img class="icon" src="https://skillicons.dev/icons?i=tailwind" />
+          <img class="icon" src="https://skillicons.dev/icons?i=postman" />
+          <img class="icon" src="https://skillicons.dev/icons?i=cpp" />
+          <img class="icon" src="https://skillicons.dev/icons?i=latex" />
+        </div>
+      </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2 class="header">PROJECTS</h2>
-        <p class="sub-header">Here are some of my projects that I have worked on recently.</p>
-        <div class="project">
-            <div class="card">
-                <div class="content">
-                    <img class="project1" src="images/dispatch-algorithms.png">
-                    <h3>Dispatch Algorithms Simulator</h3>
-                    <p><i class="ri-checkbox-circle-line"></i>Developed in NextJS</p>
-                    <a href="https://github.com/NotMarin/dispatch-algorithms" target="_blank"><i class="ri-github-fill"></i></a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="content">
-                    <img class="project1" src="images/page-dispatch.png">
-                    <h3>Page Replacement Algorithms Simulator</h3>
-                    <p><i class="ri-checkbox-circle-line"></i>Developed in NextJS</p>
-                    <a href="https://github.com/NotMarin/page-dispatch" target="_blank"><i class="ri-github-fill"></i></a>
-                </div>
-            </div>
+    <section id="projects" class="container2">
+      <h2 class="header">PROJECTS</h2>
+      <p class="sub-header">
+        Here are some of my projects that I have worked on recently.
+      </p>
+      <div class="project">
+        <div class="card">
+          <div class="content">
+            <img class="project1" src="public/images/dispatch-algorithms.png" />
+            <h3>Dispatch Algorithms Simulator</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Developed in NextJS
+            </p>
+            <a
+              href="https://github.com/NotMarin/dispatch-algorithms"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+          </div>
         </div>
+        <div class="card">
+          <div class="content">
+            <img class="project1" src="public/images/page-dispatch.png" />
+            <h3>Page Replacement Algorithms Simulator</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Developed in NextJS
+            </p>
+            <a href="https://github.com/NotMarin/page-dispatch" target="_blank">
+              <i class="ri-github-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer id="contact" class="container">
-        <span class="blur"></span>
-        <span class="blur"></span>
-        <div class="column">
-            <div class="logo">
-                <img src="images/logo.png">
-            </div>
-            
+      <span class="blur"></span>
+      <span class="blur"></span>
+      <div class="column">
+        <div class="logo">
+          <img src="public/images/logo.png" />
         </div>
-        <div class="column">
-            <h4>Contact Me</h4>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/notmarin/" target="_blank"><i class="ri-linkedin-fill"></i></a>
-                <a href="https://github.com/NotMarin" target="_blank"><i class="ri-github-fill"></i></a>
-            </div>
+      </div>
+      <div class="column">
+        <h4>Contact Me</h4>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/notmarin/" target="_blank">
+            <i class="ri-linkedin-fill"></i>
+          </a>
+          <a href="https://github.com/NotMarin" target="_blank">
+            <i class="ri-github-fill"></i>
+          </a>
         </div>
+      </div>
     </footer>
 
     <div class="copyright">
-        Copyrigth &copy; 2023 Santiago Marin Henao. All Rights Reserved.
+      Copyrigth &copy; 2023 Santiago Marin Henao. All Rights Reserved.
     </div>
-</body>
+  </body>
 </html>
