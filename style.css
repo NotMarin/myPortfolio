@@ -79,17 +79,27 @@ nav {
   background-color: #000987;
 }
 
-.container {
+.container-header {
   max-width: 1200px;
+  min-height: calc(100vh - 107px);
   margin: auto;
   padding: 1rem 1rem;
 }
 
-.container2 {
+.container-section {
   max-width: 1200px;
-  min-height: 100vh;
   margin: auto;
-  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.container-footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 1rem;
+  display: flex;
 }
 
 .blur {
@@ -100,10 +110,9 @@ nav {
 
 header {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
 }
 
 header .content h4 {
@@ -138,7 +147,6 @@ header .image {
 header .image::before {
   content: "◯";
   position: absolute;
-  top: 20%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 28rem;
@@ -150,8 +158,9 @@ header .image::before {
 }
 
 header .image img {
-  max-width: 600px;
+  width: 450px;
   margin: auto;
+  object-fit: contain;
 }
 
 .icons-container {
@@ -300,15 +309,10 @@ section .header {
 .flex-container {
   display: flex;
   justify-content: space-between;
-}
-
-.flex-container div p {
-  min-height: 100px;
+  gap: 1rem;
 }
 
 .sub-header {
-  max-width: 600px;
-  margin: auto;
   text-align: center;
   color: #ccc;
 }
@@ -383,7 +387,7 @@ footer .column p {
 footer .column .socials {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
 }
 
 footer .column .socials a {
@@ -434,11 +438,11 @@ footer .column > a:hover {
   }
 
   header {
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
   }
 
-  header .image {
-    grid-area: 1 / 1 / 2 / 2;
+  header .image img {
+    width: 400px;
   }
 
   .about {
@@ -462,6 +466,10 @@ footer .column > a:hover {
 @media (width < 600px) {
   header .image::before {
     display: none;
+  }
+
+  header .image img {
+    width: 350px;
   }
 
   .about {
